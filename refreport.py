@@ -74,7 +74,7 @@ def check_keys(refs):
                  ('publisher',), ('pages',)]
     for r in refs:
         for key in mandatory:
-            if all([x not in r for x in  key]):
+            if all([x not in r or not r[x] for x in  key]):
                 print("Polje {} ne postoji u referenci {}"
                       .format(" ili ".join(key), r['bibkey']))
 
