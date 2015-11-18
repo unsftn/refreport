@@ -83,10 +83,12 @@ def gen_html(refs):
 
     projects = {}
     for r in refs:
-        if 'project' in r:
-            if r['project'] not in projects:
-                projects[r['project']] = list()
-            projects[r['project']].append(r)
+        project = r.get('project', None)
+        if not project:
+            project = "Bez projekta"
+        if project not in projects:
+            projects[project] = list()
+        projects[project].append(r)
 
     # Initialize template engine.
     jinja_env = jinja2.Environment(
