@@ -30,3 +30,7 @@ $ python refreport.py
 
 Biće generisan fajl `refreport.html`.
 
+Informacije o nedostajućim poljima u bibtex fajlovima biće prikazane na
+konzoli.
+
+
