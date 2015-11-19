@@ -81,17 +81,41 @@ def check_keys(refs):
 
 def gen_html(refs):
 
+    # References by projects
+    authors = {}
     projects = {}
+
     for r in refs:
+
+        # by project
         project = r.get('project', None)
         if not project:
             project = "Bez projekta"
-        if project not in projects:
-            projects[project] = list()
+        r['project'] = project
+        projects.setdefault(project, [])
         projects[project].append(r)
 
+        # by authors/projects
+        for author in r['author']:
+            auth_projects = authors.setdefault(author, {})
+            auth_project = auth_projects.setdefault(project, [])
+            auth_project.append(r)
+            auth_project.sort(key=lambda x: x['title'])
+
+    # Sort projects
     projects = projects.items()
     projects.sort(key=lambda x: x[0])
+    for _, project in projects:
+        project.sort(key=lambda x: x['title'])
+
+    # Sort authors
+    for author_name, auth_projects in authors.items():
+        auth_projects = auth_projects.items()
+        auth_projects.sort(key=lambda x: x[0])
+        authors[author_name] = auth_projects
+
+    authors = authors.items()
+    authors.sort(key=lambda x: x[0])
 
     # Initialize template engine.
     jinja_env = jinja2.Environment(
@@ -108,7 +132,7 @@ def gen_html(refs):
 
     # For each entity generate java file
     with codecs.open('refreport.html', 'w', encoding="utf-8") as f:
-        f.write(template.render(projects=projects))
+        f.write(template.render(projects=projects, authors=authors))
 
 
 if __name__ == "__main__":

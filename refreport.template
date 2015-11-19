@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
 </head>
 <body>
+
 <h2>Bibliografija po projektima</h2>
 {% for project_name, project in projects %}
 <h3>{{project_name}}</h3>
@@ -27,6 +28,33 @@
 </tr>
   {% endfor %}
 </table>
+{% endfor %}
+
+<h2>Bibliografija po autorima/projektima</h2>
+{% for author_name, auth_projects in authors %}
+<h3>{{author_name}}</h3>
+  {% for project_name, project in auth_projects%}
+<h4>{{project_name}}</h4>
+<table cellpadding="2" cellspacing="0" border="1">
+<tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN</th><th>UDC</th><th>COBISS.SR ID</th></tr>
+    {% for ref in project %}
+<tr>
+  <td>{{ref.rank}}</td>
+  <td>{{ref.rank| points}}</td>
+  <td>{{ref.title}}</td>
+  <td>{{ref | booktitle_journal}}</td>
+  <td>{{ref.author.0}}</td>
+  <td>{{ref.author|coauthors}}</td>
+  <td>{{ref.year}}</td>
+  <td>{{ref.publisher}}</td>
+  <td>{{ref.pages}}</td>
+  <td>{{ref | isbn_issn }}</td>
+  <td></td>
+  <td></td>
+</tr>
+    {% endfor %}
+</table>
+  {% endfor %}
 {% endfor %}
 </body>
 </html>
