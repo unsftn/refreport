@@ -6,6 +6,7 @@
   <style type="text/css" media="screen">
     h2 { font-size: 2em; margin-top: 2em}
     h3 { font-size: 1.3em; margin-top: 2em}
+    .uncomplete {background-color: #FF9D9D}
   </style>
 </head>
 <body>
@@ -16,7 +17,7 @@
 <table cellpadding="2" cellspacing="0" border="1">
 <tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN</th><th>UDC</th><th>COBISS.SR ID</th></tr>
   {% for ref in project %}
-<tr>
+  <tr{% if ref.uncomplete %} class="uncomplete"{% endif %}>
   <td>{{ref.rank}}</td>
   <td>{{ref.rank| points}}</td>
   <td>{{ref.title}}</td>
@@ -42,7 +43,7 @@
 <table cellpadding="2" cellspacing="0" border="1">
 <tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN</th><th>UDC</th><th>COBISS.SR ID</th></tr>
     {% for ref in project %}
-<tr>
+  <tr{% if ref.uncomplete %} class="uncomplete"{% endif %}>
   <td>{{ref.rank}}</td>
   <td>{{ref.rank| points}}</td>
   <td>{{ref.title}}</td>

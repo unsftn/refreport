@@ -77,6 +77,7 @@ def check_keys(refs):
             if all([x not in r or not r[x] for x in  key]):
                 print("  Polje {} ne postoji u referenci {}"
                       .format(" ili ".join(key), r['bibkey']))
+                r['uncomplete'] = True
 
 
 def gen_html(refs):
