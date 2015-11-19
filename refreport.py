@@ -151,7 +151,7 @@ if __name__ == "__main__":
             check_keys(refs_f)
             refs.extend(refs_f)
         except NoMatch as e:
-            print(e)
+            print(unicode(e))
 
     gen_html(refs)
 
