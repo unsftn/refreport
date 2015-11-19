@@ -7,7 +7,7 @@ import glob
 import jinja2
 import codecs
 from arpeggio import NoMatch
-from bibtex import parse_bibtex
+from parser import parse_bibtex
 
 sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 
