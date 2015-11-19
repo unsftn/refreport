@@ -3,6 +3,10 @@
 <head>
   <title>Izveštaj za ministarstvo</title>
   <meta charset="utf-8" />
+  <style type="text/css" media="screen">
+    h2 { font-size: 2em; margin-top: 2em}
+    h3 { font-size: 1.3em; margin-top: 2em}
+  </style>
 </head>
 <body>
 
