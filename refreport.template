@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>Bibliografija po projektima</h2>
-{% for project_name, project in projects.items() %}
+{% for project_name, project in projects %}
 <h3>{{project_name}}</h3>
 <table cellpadding="2" cellspacing="0" border="1">
 <tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN</th><th>UDC</th><th>COBISS.SR ID</th></tr>

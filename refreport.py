@@ -75,7 +75,7 @@ def check_keys(refs):
     for r in refs:
         for key in mandatory:
             if all([x not in r or not r[x] for x in  key]):
-                print("Polje {} ne postoji u referenci {}"
+                print("  Polje {} ne postoji u referenci {}"
                       .format(" ili ".join(key), r['bibkey']))
 
 
@@ -89,6 +89,9 @@ def gen_html(refs):
         if project not in projects:
             projects[project] = list()
         projects[project].append(r)
+
+    projects = projects.items()
+    projects.sort(key=lambda x: x[0])
 
     # Initialize template engine.
     jinja_env = jinja2.Environment(
@@ -114,7 +117,7 @@ if __name__ == "__main__":
     bibtex_files = glob.glob(os.path.join(bibtex_dir, '*.bib'))
 
     for f in bibtex_files:
-        print("Obrađujem fajl {}".format(f))
+        print(f)
         try:
             refs_f = parse_bibtex(f)
             for r in refs_f:
