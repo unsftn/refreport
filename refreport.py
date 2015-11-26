@@ -65,7 +65,7 @@ def check_keys(refs):
 def gen_html(refs):
 
     # Sort by year in ascending order
-    refs.sort(key=lambda x: x['year'])
+    refs.sort(key=lambda x: x['year'], reverse=True)
 
     # Initialize template engine.
     jinja_env = jinja2.Environment(
