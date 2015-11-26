@@ -9,52 +9,9 @@ import codecs
 from arpeggio import NoMatch
 from parser import parse_bibtex
 
+AUTHOR="Igor Dejanović"
+
 sys.stdout = codecs.getwriter('utf8')(sys.stdout)
-
-points_table = {
-    'M11': '15',
-    'M12': '10',
-    'M13': '6',
-    'M14': '4',
-    'M21': '8',
-    'M22': '5',
-    'M23': '3',
-    'M24': '3',
-    'M31': '3',
-    'M32': '1.5',
-    'M33': '1',
-    'M34': '0.5',
-    'M41': '7',
-    'M42': '5',
-    'M43': '3',
-    'M44': '2',
-    'M45': '1.5',
-    'M51': '2',
-    'M52': '1.5',
-    'M53': '1',
-    'M55': '2',
-    'M56': '1',
-    'M61': '1.5',
-    'M62': '1',
-    'M63': '0.5',
-    'M71': '6',
-    'M72': '3',
-    'M81': '8',
-    'M82': '6',
-    'M83': '4',
-    'M84': '3',
-    'M85': '2',
-    'M91': '10',
-    'M92': '8',
-}
-
-
-def points(type):
-    return points_table.get(type, '')
-
-
-def coauthors_filter(author_list):
-    return ", ".join(author_list[1:])
 
 
 def isbn_issn(ref):
@@ -64,6 +21,33 @@ def isbn_issn(ref):
 def booktitle_journal(ref):
     return ref.get('booktitle', ref.get('journal', ''))
 
+
+def authors_editors(ref):
+    if 'author' in ref:
+        return ref['author']
+    else:
+        return ref['editor']
+
+
+def authors_emph(ref):
+    authors = authors_editors(ref)
+    authors = ["<b>{}</b>".format(author)
+                if author == AUTHOR else author for author in authors]
+    return ", ".join(authors)
+
+def uloga(ref):
+    authors = authors_editors(ref)
+    return "аутор" if authors[0] == AUTHOR else "коаутор"
+
+
+def ref_format(ref):
+    return "{}. {}. {}{}{}".format(
+            authors_emph(ref),
+            ref['title'],
+            " {},".format(booktitle_journal(ref)),
+            " pp. {},".format(ref['pages']) if 'pages' in ref else "",
+            " {}.".format(ref['year'])
+            )
 
 def check_keys(refs):
     """
@@ -77,63 +61,26 @@ def check_keys(refs):
             if all([x not in r or not r[x] for x in  key]):
                 print("  Polje {} ne postoji u referenci {}"
                       .format(" ili ".join(key), r['bibkey']))
-                r['uncomplete'] = True
-
 
 def gen_html(refs):
 
-    # References by projects
-    authors = {}
-    projects = {}
-
-    for r in refs:
-
-        # by project
-        project = r.get('project', None)
-        if not project:
-            project = "Bez projekta"
-        r['project'] = project
-        projects.setdefault(project, [])
-        projects[project].append(r)
-
-        # by authors/projects
-        for author in r['author']:
-            auth_projects = authors.setdefault(author, {})
-            auth_project = auth_projects.setdefault(project, [])
-            auth_project.append(r)
-            auth_project.sort(key=lambda x: x['title'])
-
-    # Sort projects
-    projects = projects.items()
-    projects.sort(key=lambda x: x[0])
-    for _, project in projects:
-        project.sort(key=lambda x: x['title'])
-
-    # Sort authors
-    for author_name, auth_projects in authors.items():
-        auth_projects = auth_projects.items()
-        auth_projects.sort(key=lambda x: x[0])
-        authors[author_name] = auth_projects
-
-    authors = authors.items()
-    authors.sort(key=lambda x: x[0])
+    # Sort by year in ascending order
+    refs.sort(key=lambda x: x['year'])
 
     # Initialize template engine.
     jinja_env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
     # Filters
-    jinja_env.filters['points'] = points
-    jinja_env.filters['coauthors'] = coauthors_filter
-    jinja_env.filters['isbn_issn'] = isbn_issn
-    jinja_env.filters['booktitle_journal'] = booktitle_journal
+    jinja_env.filters['ref_format'] = ref_format
+    jinja_env.filters['uloga'] = uloga
 
     # Load Java template
     template = jinja_env.get_template('refreport.template')
 
     # For each entity generate java file
     with codecs.open('refreport.html', 'w', encoding="utf-8") as f:
-        f.write(template.render(projects=projects, authors=authors))
+        f.write(template.render(references=refs))
 
 
 if __name__ == "__main__":
@@ -146,8 +93,14 @@ if __name__ == "__main__":
         try:
             refs_f = parse_bibtex(f)
             for r in refs_f:
-                r['author'] = [x.strip() for x in
-                               re.split(' and |,', r['author'])]
+                print(r['title'])
+                if 'author' in r:
+                    r['author'] = [x.strip() for x in
+                                re.split(' and |,', r['author'])]
+                else:
+                    r['editor'] = [x.strip() for x in
+                                    re.split(' and |,', r['editor'])]
+
             check_keys(refs_f)
             refs.extend(refs_f)
         except NoMatch as e:
