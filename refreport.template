@@ -12,7 +12,7 @@
 <body>
 
 <table cellpadding="2" cellspacing="0" border="1">
-  <tr><th>Назив</th><th>Улога</th></tr>
+  <tr><th>Назив</th><th>Улога (аутор, коаутор)</th></tr>
   {% for ref in references %}
   <tr>
   <td>{{ref|ref_format}}</td>
