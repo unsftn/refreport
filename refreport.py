@@ -128,10 +128,8 @@ def gen_html(refs):
     jinja_env.filters['isbn_issn'] = isbn_issn
     jinja_env.filters['booktitle_journal'] = booktitle_journal
 
-    # Load Java template
+    # Generate report
     template = jinja_env.get_template('refreport.template')
-
-    # For each entity generate java file
     with codecs.open('refreport.html', 'w', encoding="utf-8") as f:
         f.write(template.render(projects=projects, authors=authors))
 
