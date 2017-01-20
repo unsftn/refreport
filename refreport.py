@@ -52,6 +52,8 @@ points_table = {
 def points(type):
     return points_table.get(type, '')
 
+def allauthors_filter(author_list):
+    return ", ".join(author_list)
 
 def coauthors_filter(author_list):
     return ", ".join(author_list[1:])
@@ -79,7 +81,22 @@ def check_keys(refs):
                       .format(" ili ".join(key), r['bibkey']))
                 r['uncomplete'] = True
 
+def gen_md(refs):
+    # Filters
+    jinja_env.filters['points'] = points
+    jinja_env.filters['allauthors'] = allauthors_filter
+    jinja_env.filters['isbn_issn'] = isbn_issn
+    jinja_env.filters['booktitle_journal'] = booktitle_journal
 
+    # Initialize template engine.
+    jinja_env = jinja2.Environment(
+        loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
+		
+	# Generate report
+    template = jinja_env.get_template('refreport_md.template')
+    with codecs.open('refreport.html', 'w', encoding="utf-8") as f:
+        f.write(template.render(refs=refs))
+				
 def gen_html(refs):
 
     # References by projects
@@ -152,6 +169,7 @@ if __name__ == "__main__":
             print(unicode(e))
 
     gen_html(refs)
+    gen_md(refs)
 
 
 
