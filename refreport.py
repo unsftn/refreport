@@ -82,19 +82,21 @@ def check_keys(refs):
                 r['uncomplete'] = True
 
 def gen_md(refs):
+
+    # Initialize template engine.
+    jinja_env = jinja2.Environment(
+        loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
+
+
     # Filters
     jinja_env.filters['points'] = points
     jinja_env.filters['allauthors'] = allauthors_filter
     jinja_env.filters['isbn_issn'] = isbn_issn
     jinja_env.filters['booktitle_journal'] = booktitle_journal
-
-    # Initialize template engine.
-    jinja_env = jinja2.Environment(
-        loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
-		
+	
 	# Generate report
     template = jinja_env.get_template('refreport_md.template')
-    with codecs.open('refreport.html', 'w', encoding="utf-8") as f:
+    with codecs.open('refreport.md', 'w', encoding="utf-8") as f:
         f.write(template.render(refs=refs))
 				
 def gen_html(refs):

@@ -9,8 +9,6 @@ permalink: /publications/
 
 
 {% for ref in refs %}
-
 * {{ref.author|allauthors}}: {{ref.title}}, {{ref | booktitle_journal}}, {{ref.year}}, pp. {{ref.pages}}, {{ref.publisher}}
-
 {% endfor %}
 
