@@ -15,7 +15,7 @@
 {% for project_name, project in projects %}
 <h3>{{project_name}}</h3>
 <table cellpadding="2" cellspacing="0" border="1">
-<tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN</th><th>UDC</th><th>COBISS.SR ID</th></tr>
+<tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN/DOI</th><th>UDC</th><th>COBISS.SR ID</th></tr>
   {% for ref in project %}
   <tr{% if ref.uncomplete %} class="uncomplete"{% endif %}>
   <td>{{ref.rank}}</td>
@@ -27,7 +27,7 @@
   <td>{{ref.year}}</td>
   <td>{{ref.publisher}}</td>
   <td>{{ref.pages}}</td>
-  <td>{{ref | isbn_issn }}</td>
+  <td>{{ref | isbn_issn_doi }}</td>
   <td></td>
   <td></td>
 </tr>
@@ -41,7 +41,7 @@
   {% for project_name, project in auth_projects%}
 <h4>{{project_name}}</h4>
 <table cellpadding="2" cellspacing="0" border="1">
-<tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN</th><th>UDC</th><th>COBISS.SR ID</th></tr>
+<tr><th>Kat</th><th>bod</th><th>Naziv rada</th><th>Naziv publikacije / Naziv skupa</th><th>Autor</th><th>Koautori</th><th>Godina</th><th>Izdavač</th><th>Strana</th><th>ISSN/ISBN/DOI</th><th>UDC</th><th>COBISS.SR ID</th></tr>
     {% for ref in project %}
   <tr{% if ref.uncomplete %} class="uncomplete"{% endif %}>
   <td>{{ref.rank}}</td>
@@ -53,7 +53,7 @@
   <td>{{ref.year}}</td>
   <td>{{ref.publisher}}</td>
   <td>{{ref.pages}}</td>
-  <td>{{ref | isbn_issn }}</td>
+  <td>{{ref | isbn_issn_doi }}</td>
   <td></td>
   <td></td>
 </tr>

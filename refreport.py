@@ -58,21 +58,22 @@ def coauthors_filter(author_list):
     return ", ".join(author_list[1:])
 
 
-def isbn_issn(ref):
-    return ref.get('isbn', ref.get('issn', ''))
+def isbn_issn_doi(ref):
+    return ref.get('isbn', ref.get('issn', ref.get('doi', '')))
 
 
 def booktitle_journal(ref):
-    return ref.get('booktitle', ref.get('journal', ''))
+    return ref.get('booktitle', ref.get('journal', ref.get('series', '')))
 
 
 def check_keys(refs):
     """
     Check mandatory keys.
     """
-    mandatory = [('project',), ('rank',), ('title',), ('booktitle', 'journal'),
-                 ('author',), ('year',), ('isbn', 'issn'),
-                 ('publisher',), ('pages',)]
+    mandatory = [('project',), ('rank',), ('title',),
+                 ('booktitle', 'journal', 'series'),
+                 ('author',), ('year',), ('isbn', 'issn', 'doi'),
+                 ('publisher',), ('pages', 'series')]
     for r in refs:
         for key in mandatory:
             if all([x not in r or not r[x] for x in key]):
@@ -90,7 +91,7 @@ def gen_md(refs):
     # Filters
     jinja_env.filters['points'] = points
     jinja_env.filters['allauthors'] = allauthors_filter
-    jinja_env.filters['isbn_issn'] = isbn_issn
+    jinja_env.filters['isbn_issn_doi'] = isbn_issn_doi
     jinja_env.filters['booktitle_journal'] = booktitle_journal
 
     # Generate report
@@ -144,7 +145,7 @@ def gen_html(refs):
     # Filters
     jinja_env.filters['points'] = points
     jinja_env.filters['coauthors'] = coauthors_filter
-    jinja_env.filters['isbn_issn'] = isbn_issn
+    jinja_env.filters['isbn_issn_doi'] = isbn_issn_doi
     jinja_env.filters['booktitle_journal'] = booktitle_journal
 
     # Generate report
