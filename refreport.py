@@ -9,7 +9,7 @@ import codecs
 from arpeggio import NoMatch
 from parser import parse_bibtex
 
-sys.stdout = codecs.getwriter('utf8')(sys.stdout)
+#sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 
 points_table = {
     'M11': '15',
@@ -123,18 +123,18 @@ def gen_html(refs):
             auth_project.sort(key=lambda x: x['title'])
 
     # Sort projects
-    projects = projects.items()
+    projects = list(projects.items())
     projects.sort(key=lambda x: x[0])
     for _, project in projects:
         project.sort(key=lambda x: x['title'])
 
     # Sort authors
     for author_name, auth_projects in authors.items():
-        auth_projects = auth_projects.items()
+        auth_projects = list(auth_projects.items())
         auth_projects.sort(key=lambda x: x[0])
         authors[author_name] = auth_projects
 
-    authors = authors.items()
+    authors = list(authors.items())
     authors.sort(key=lambda x: x[0])
 
     # Initialize template engine.
