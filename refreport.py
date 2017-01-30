@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 from __future__ import unicode_literals
-import sys
 import os
 import re
 import glob
@@ -8,8 +7,6 @@ import jinja2
 import codecs
 from arpeggio import NoMatch
 from parser import parse_bibtex
-
-#sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 
 points_table = {
     'M11': '15',
@@ -52,8 +49,10 @@ points_table = {
 def points(type):
     return points_table.get(type, '')
 
+
 def allauthors_filter(author_list):
     return ", ".join(author_list)
+
 
 def coauthors_filter(author_list):
     return ", ".join(author_list[1:])
@@ -76,10 +75,11 @@ def check_keys(refs):
                  ('publisher',), ('pages',)]
     for r in refs:
         for key in mandatory:
-            if all([x not in r or not r[x] for x in  key]):
+            if all([x not in r or not r[x] for x in key]):
                 print("  Polje {} ne postoji u referenci {}"
                       .format(" ili ".join(key), r['bibkey']))
                 r['uncomplete'] = True
+
 
 def gen_md(refs):
 
@@ -87,18 +87,18 @@ def gen_md(refs):
     jinja_env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
-
     # Filters
     jinja_env.filters['points'] = points
     jinja_env.filters['allauthors'] = allauthors_filter
     jinja_env.filters['isbn_issn'] = isbn_issn
     jinja_env.filters['booktitle_journal'] = booktitle_journal
-	
-	# Generate report
+
+    # Generate report
     template = jinja_env.get_template('refreport_md.template')
     with codecs.open('refreport.md', 'w', encoding="utf-8") as f:
         f.write(template.render(refs=refs))
-				
+
+
 def gen_html(refs):
 
     # References by projects
@@ -168,13 +168,7 @@ if __name__ == "__main__":
             check_keys(refs_f)
             refs.extend(refs_f)
         except NoMatch as e:
-            print(unicode(e))
+            print(str(e))
 
     gen_html(refs)
     gen_md(refs)
-
-
-
-
-
-
