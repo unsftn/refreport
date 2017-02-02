@@ -165,6 +165,7 @@ if __name__ == "__main__":
         try:
             refs_f = parse_bibtex(f)
             for r in refs_f:
+                r['author'] = r['author'].replace(',', '')
                 r['author'] = [x.strip() for x in
                                re.split(' and |,', r['author'])]
             check_keys(refs_f)
