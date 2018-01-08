@@ -40,5 +40,5 @@ konzoli.
 Možete ubaciti u repo i `refreport.html` ali proverite da ste ga dobro
 generisali, tj. da je filtriran za tekući ciklus (trenutno za 2017 god.).
 
-Trenutnu verziju iz repozitorijuma uvek možete videti na [ovom linku](https://rawgit.com/unsftn/refreport/master/refreport.html).
+Trenutnu verziju iz repozitorijuma uvek možete videti na [ovom linku](http://htmlpreview.github.io/?https://github.com/unsftn/refreport/blob/master/refreport.html).
 
