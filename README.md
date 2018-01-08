@@ -42,3 +42,5 @@ generisali, tj. da je filtriran za tekući ciklus (trenutno za 2017 god.).
 
 Trenutnu verziju iz repozitorijuma uvek možete videti na [ovom linku](http://htmlpreview.github.io/?https://github.com/unsftn/refreport/blob/master/refreport.html).
 
+Reference koje nisu potpune su obeležene crvenom bojom.
+
