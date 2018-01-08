@@ -1,12 +1,25 @@
 # -*- encoding: utf-8 -*-
 from __future__ import unicode_literals
 import os
+import sys
 import re
 import glob
 import jinja2
 import codecs
+import argparse
 from arpeggio import NoMatch
 from parser import parse_bibtex
+
+
+class MyParser(argparse.ArgumentParser):
+    """
+    Custom arugment parser for printing help message in case of error.
+    See http://stackoverflow.com/questions/4042452/display-help-message-with-python-argparse-when-script-is-called-without-any-argu
+    """
+    def error(self, message):
+        sys.stderr.write('error: %s\n' % message)
+        self.print_help()
+
 
 points_table = {
     'M11': '15',
@@ -156,6 +169,25 @@ def gen_html(refs):
 
 
 if __name__ == "__main__":
+
+    arg_parser = MyParser(
+        description="Alat za generisanje izveštaja za Ministarstvo.")
+    arg_parser.add_argument(
+        'yearfilter', help="Filter po godinama (npr. 2011 ili 2010-2015)",
+        nargs="?")
+
+    args = arg_parser.parse_args()
+
+    def check_year(yearfilter):
+        def filter_for_years(ref):
+            if '-' in yearfilter:
+                _from, to = yearfilter.split('-')
+                _from, to = int(_from), int(to)
+                return _from <= int(ref['year']) <= to
+            else:
+                return int(ref['year']) == int(yearfilter)
+        return filter_for_years
+
     refs = []
     bibtex_dir = os.path.join(os.path.dirname(__file__), 'bibtex-files')
     bibtex_files = glob.glob(os.path.join(bibtex_dir, '*.bib'))
@@ -164,6 +196,12 @@ if __name__ == "__main__":
         print(f)
         try:
             refs_f = parse_bibtex(f)
+            # If year filter is given do the filtering
+            if args.yearfilter:
+                refs_f = list(filter(check_year(args.yearfilter), refs_f))
+            if not refs_f:
+                print("Nema referenci za zadate uslove.")
+                continue
             for r in refs_f:
                 r['author'] = r['author'].replace(',', '')
                 r['author'] = [x.strip() for x in
