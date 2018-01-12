@@ -52,19 +52,18 @@ Primer:
 ```
 @article{Dejanovic2017a,
 	author = {Igor Dejanović and Renata Vaderna and Gordana Milosavljević and Željko Vuković},
+	title = {{TextX: A Python tool for Domain-Specific Languages implementation}},
+	journal = {Knowledge-Based Systems},
+    publisher = {Elsevier},
+	volume = {115},
+	pages = {1--4},
+	url = {http://www.sciencedirect.com/science/article/pii/S0950705116304178},
 	doi = {10.1016/j.knosys.2016.10.023},
 	issn = {0950-7051},
-	journal = {Knowledge-Based Systems},
-	keywords = {Domain-Specific Language; Meta-model; Model; Model-Driven software development; Parser; Python },
-	pages = {1--4},
-  publisher = {Elsevier},
-	title = {{TextX: A Python tool for Domain-Specific Languages implementation}},
-	url = {http://www.sciencedirect.com/science/article/pii/S0950705116304178},
-	volume = {115},
 	year = {2017},
 
 	rank = {M21},
-  project = {III44010-PP1}
+    project = {III44010-PP1}
 }
 ```
 
