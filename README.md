@@ -47,6 +47,29 @@ Koristite "naša" slova direktno. Izbegavajte bibtex format oblika `\'{c}`.
 Pre unosa reference proverite prvo da li je neko od koautora već uneo. Nemojte
 unositi duplo.
 
+Primer:
+
+```
+@article{Dejanovic2017a,
+	author = {Igor Dejanović and Renata Vaderna and Gordana Milosavljević and Željko Vuković},
+	doi = {10.1016/j.knosys.2016.10.023},
+	issn = {0950-7051},
+	journal = {Knowledge-Based Systems},
+	keywords = {Domain-Specific Language; Meta-model; Model; Model-Driven software development; Parser; Python },
+	pages = {1--4},
+  publisher = {Elsevier},
+	title = {{TextX: A Python tool for Domain-Specific Languages implementation}},
+	url = {http://www.sciencedirect.com/science/article/pii/S0950705116304178},
+	volume = {115},
+	year = {2017},
+
+	rank = {M21},
+  project = {III44010-PP1}
+}
+```
+
+Ne morate brisati reference od ranije. Samo dodajte nove u već postojeće fajlove.
+
 Trenutnu verziju iz repozitorijuma uvek možete videti na [ovom linku](http://htmlpreview.github.io/?https://github.com/unsftn/refreport/blob/master/refreport.html).
 
 Reference koje nisu potpune su obeležene crvenom bojom.
