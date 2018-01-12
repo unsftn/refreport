@@ -40,7 +40,15 @@ konzoli.
 Možete ubaciti u repo i `refreport.html` ali proverite da ste ga dobro
 generisali, tj. da je filtriran za tekući ciklus (trenutno za 2017 god.).
 
+Za autore navodite prvo ime pa prezime. Autore razdvajajte sa rečju "and".
+
+Koristite "naša" slova direktno. Izbegavajte bibtex format oblika `\'{c}`.
+
+Pre unosa reference proverite prvo da li je neko od koautora već uneo. Nemojte
+unositi duplo.
+
 Trenutnu verziju iz repozitorijuma uvek možete videti na [ovom linku](http://htmlpreview.github.io/?https://github.com/unsftn/refreport/blob/master/refreport.html).
 
 Reference koje nisu potpune su obeležene crvenom bojom.
 
+Na kraju, u izveštaju, proverite po vašim imenom da li je sve ispravno.
