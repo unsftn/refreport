@@ -65,9 +65,17 @@ permalink: /publications/
 
 * Valentin Penca, Siniša Nikolić, Dragan Ivanović: Mapping scheme from Invenio to CERIF format, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 409--414, Society of information systems and computer networks
 
+* Nikola Nikolić, Goran Savić, Branko Milosavljević: E-Course generator based on ontology of accreditation documents, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 361-365, Society for Information Systems and Computer Networks
+
+* Aleksandar Pejaković, Milan Segedinac, Goran Savić: Generating educational courses by using ontologies and stream processing, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 366-367, Society for Information Systems and Computer Networks
+
+* Dragan Vidaković, Milan Segedinac, Đorđe Obradović, Goran Savić: Recommendation System with Personalizable Distributed Collaborative Filtering, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 29-32, Society for Information Systems and Computer Networks
+
 * Nikola Nikolić, Goran Savić, Branko Milosavljević: E-Course generator based on ontology of accreditation documents, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 361-365, 
 
 * Aleksandar Pejaković, Milan Segedinac, Goran Savić: Generating educational courses by using ontologies and stream processing, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 366-367, 
 
 * Dragan Vidaković, Milan Segedinac, Đorđe Obradović, Goran Savić: Recommendation System with Personalizable Distributed Collaborative Filtering, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 29-32, 
+
+* Igor Zečević, Petar Bjeljac, Branko Perišić, Vladimir Maruna, Danijel Venus: Domain-Specific Modeling Environment for Developing Domain Specific Modeling Languages as Lightweight General Purpose Modeling Language Extensions, Recent Advances in Information Systems and Technologies, 2017, pp. 872-881, Springer
 
