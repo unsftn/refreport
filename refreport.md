@@ -9,67 +9,65 @@ permalink: /publications/
 
 
 
-* Milan Pandurov, Srđan Milaković, Nikola Lukić, Goran Savić, Milan Segedinac, Zora Konjović: Software Framework for REST Client Android Applications: Canvas LMS Case Study, 5th International Conference on Information Society and Technology (ICIST 2015), 2015, pp. 32-37, Informaciono društvo Srbije
+* Igor Dejanović, Renata Vaderna, Gordana Milosavljević, Željko Vuković: TextX: A Python tool for Domain-Specific Languages implementation, Knowledge-Based Systems, 2017, pp. 1--4, Elsevier
 
-* Goran Savić, Milan Segedinac, Goran Sladić, Stevan Gostojić, Zora Konjović: Upravljanje nastavnim objektima zasnovano na ontologiji za opis dokumenata, Info M, 2015, pp. 18-24, Fakultet organizacionih nauka
+* Mirjana Dejanović, Igor Dejanović, Nenad Milošević: A free, simple and choice reaction time software and its application in fatigue detection, Proceedings of the REGIONALNA NAUČNOSTRUČNA KONFERENCIJA "INFOFEST PULSE 2017", 2017, pp. 163--168, FON
 
-* Rajko Bulatović, Milan Paroški, Ðorđe Obradović, Zora Konjović: Inteligentno planiranje inspekcijskog nadzora baziranog na dinamickom stepenu rizika, INFOFest 2015, 2015, pp. 177-186, Ministarstvo za informaciono društvo i telekomunikacije, Crna Gora
+* Igor Dejanović, Mirjana Dejanović, Gordana Milosavljević: Alati za brz razvoj softvera bazirani na jezicima specifičnim za domen, Proceedings of the REGIONALNA NAUČNOSTRUČNA KONFERENCIJA "INFOFEST PULSE 2017", 2017, pp. 169--176, FON
 
-* Igor Cverdelj-Fogaraši, Goran Sladić, Stevan Gostojić, Milan Segedinac, Branko Milosavljević: A Meta-metadata Ontology Based on ebRIM Specification, 5th International Conference on Information Society and Technology (ICIST 2015), 2015, pp. 213-218, Society for Information Systems and Computer Networks
+* Igor Dejanović, Renata Vaderna, Gordana Milosavljević, Miloš Simić, Željko Vuković: A python tool for the implementation of domain-specific languages, AIP Conference Proceedings, 2017, pp. 330003, AIP Publishing
 
-* Miloš Simić, Željko Bal, Renata Vaderna, Igor Dejanović: PyTabs: A DSL for simplified music notation, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 439-443, Information Society of Serbia
+* Jelena Slivka Goran Sladić Branko Milosavljević Aleksandar Kovačević: RSSalg software: A tool for flexible experimenting with co-training based semi-supervised algorithms, Knowledge-Based Systems, 2017, pp. 4--6, Elsevier
 
-* Marko Jocić, Đorđe Obradović, Zora Konjović: Measuring influence of Facebook pages, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 43-48, Society for Information Systems and Computer Networks
+* Vladimir Balać Milan Vidaković: A model-Driven Approach to User-Specific Operations in the Development of Web Business Applications, Proceedings of The 7th International Conference on Information Society, Technology and Management, 2017, pp. 169-172, Informaciono društvo Srbije
 
-* Dragan Ivanović, Fu Hui-Zhen, Ho Yuh-Shan: Publications from Serbia in the Science Citation Index Expanded: a bibliometric analysis, Scientometrics, 2015, pp. 145-160, Springer
+* Aleksandar Lukić Nikola Luburić Milan Vidaković Marko Holbl: Development of multi-agent framework in JavaScript, Proceedings of The 7th International Conference on Information Society, Technology and Management, 2017, pp. 261-265, Informaciono društvo Srbije
 
-* Valentin Penca, Siniša Nikolić, Dragan Ivanović: Scheme for mapping scientific research data from EPrints to CERIF format, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 295-300, Society for Information Systems and Computer Networks
+* Dejan Sredojević Milan Vidaković Mirjana Ivanović Dejan Mitrović: Extension of Agent-oriented Domain-specific language ALAS as a support to Distributed Non-Axiomatic Reasoning, Proceedings of The 7th International Conference on Information Society, Technology and Management, 2017, pp. 368-372, Informaciono društvo Srbije
 
-* Dragan Ivanović, Miloš Jovanović, Frank Fritsche: Scientific Cooperation in the Republics of Former Yugoslavia Before, During and After the Yugoslav Wars, 15th International Society of Scientometrics and Informetrics Conference (ISSI 2015), 2015, pp. 784-789, Bogazici University Printhouse
+* Goran Sladi\'c, Igor Cverdelj-Fogaraši, Stevan Gostojić, Milan Segedinac, Goran Savi\'c, Miroslav Zari\'c: Multilayer document model for semantic document management services, Journal of Documentation, 2017, pp. 803-824, Emerald
 
-* Željko Vuković, Nikola Milanović, Dušan Okanović: Sistem integracija primenom Apache Camel platforme, YUInfo 2014, 2014, pp. 417-421, Društvo za informacione sisteme i računarske mreže
+* Igor Cverdelj-Fogaraši, Goran Sladi\'c, Stevan Gostojić, Milan Segedinac, Branko Milosavljevi\'c: Semantic integration of enterprise information systems using meta-metadata ontology, Information Systems and e-Business Management, 2017, pp. 257-304, Springer Link
 
-* Okanović Dušan, Vidaković Milan, Željko Vuković, Dejan Mitrović, Mirjana Ivanović: Editor for Agent-Oriented Programming Language ALAS, 4rd International Conference on Information Society Technology and Management (ICIST 2014), 2014, pp. 216-220, Informaciono društvo Srbije
+* Goran Sladić, Branko Milosavljević: Context-Aware Access Control for IoT Driven Processes, 8th PSU-UNS International Conference on Engineering and Technology (ICET 2017), 2017, pp. 4, University of Novi Sad, Faculty of Technical Sciences
 
-* Željko Vuković, Nikola Milanović, Renata Vaderna, Igor Dejanović, Gordana Milosavljević: SAIL: A Domain-Specific Language for Semantic-Aided Automation of Interface Mapping in Enterprise Integration, On the Move to Meaningful Internet Systems: OTM 2015 Workshops, 2015, pp. 97-106, Springer
+* Milan Stojkov, Branko Milosavljević, Goran Sladić: On the Usability of Access Control Models in IoT, 8th PSU-UNS International Conference on Engineering and Technology (ICET 2017), 2017, pp. 4, University of Novi Sad, Faculty of Technical Sciences
 
-* Željko Vuković, Nikola Milanović, Gregor Baugoff: Prototype of a Framework for Ontology-aided semantic conflict resolution in enterprise integration, 4rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 257-260, Informaciono društvo Srbije
+* Miloš Simi'c, Goran Sladić, Branko Milosavljević: A Case Study IoT and Blockchain Powered Healthcare, 8th PSU-UNS International Conference on Engineering and Technology (ICET 2017), 2017, pp. 4, University of Novi Sad, Faculty of Technical Sciences
 
-* Dejan Mitrović, Mirjana Ivanović, Milan Vidaković, Zoran Budimac: Reliable interaction in multiagent systems, 9'th International Symposium on Intelligent Distributed Computing (IDC), 2015, pp. 93-99, Springer International Publishing
+* Aleksandar Bošnjak, Goran Sladić, Nikola Luburić: Smart tourism destinations: Enhancing interconnection between stakeholders and tourist through information personalization and feedback system, 7th International Conference on Information Science and Technology (ICIST), 2017, pp. 93-97, Society for Information Systems and Computer Networks
 
-* Dejan Sredojević, Milan Vidaković, Dušan Okanović, Dejan Mitrović, Mirjana Ivanović: Conversion of the Agent-Oriented Domain-Specific Language ALAS into JavaScript, 5'th Symposium on Computer Languages, Implementations, and Tools (SCLIT), 2015, pp. , 
+* Azad Dehghan Aleksandar Kovačević George Karystianis John A. Keane Goran Nenadić: Learning to identify protected health information by integrating knowledge-and data-driven algorithms: a case study on psychiatric evaluation notes, Journal of Biomedical Informatics, 2017, pp. S28-S33, Elsevier
 
-* Dejan Mitrović, Mirjana Ivanović, Milan Vidaković, Zoran Budimac: A scalable distributed architecture for web-based software agents, 7'th International Conference on Computational Collective Intelligence (ICCCI), 2015, pp. 67-76, Springer International Publishing
+* Tobias Angerstein Dušan Okanović Christoph Heger André van Hoorn Aleksandar Kovačević Thomas Kluge: Many Flies in One Swat: Automated Categorization of Performance Problem Diagnosis Results, Proceedings of the 8th ACM/SPEC on International Conference on Performance Engineering, 2017, pp. 341-344, ACM
 
-* Dejan Sredojević, Milan Vidaković, Dušan Okanović: Integration of Agent Domain-Specific Language ALAS into Extensible Java-Based Framework XJAF, 34'th International Conference on Organizational Science Development INTERNATIONALIZATION AND COOPERATION, 2015, pp. 1037-1043, Moderna organizacija v okviru Univerze v Mariboru
+* Aleksandar Kaplar Miloš Simić Aleksandar Kovačević: Artificial General Intelligence Approach for Reasoning in Clinical Decision Support, Proceedings of The 7th International Conference on Information Society, Technology and Management, 2017, pp. 271-274, Informaciono društvo Srbije
 
-* Dejan Sredojević, Dušan Okanović, Milan Vidaković, Dejan Mitrović, Mirjana Ivanović: Domain specific agent-oriented programming language based on the Xtext framework, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 461-467, Informaciono društvo Srbije
+* Angelina Vujanović Gorana Gojić Radovan Turović Jelena Slivka Aleksandar Kovačević: The Influence of Nearby Geographical Objects on the Popularity of Bicycle-Sharing Stations, Proceedings of The 7th International Conference on Information Society, Technology and Management, 2017, pp. 9-12, Informaciono društvo Srbije
 
-* Dejan Stefanović, Milan Vidaković, Bojan Lackanović, Dragan Ždrnja, Nikola Teslić: Comparing complex trees stored in database, 2015 IEEE International Conference on Consumer Electronics (ICCE), 2015, pp. 432-434, IEEE
+* Stefan An\djelić Miroslav Kondić Ivan Perić Marko Jocić Aleksandar Kovačević: Text Classification Based on Named Entities, Proceedings of The 7th International Conference on Information Society, Technology and Management, 2017, pp. 23-28, Informaciono društvo Srbije
 
-* Alen Suljkanović, Gordana Milosavljević, Dušan Majstorović, Igor Dejanović: Implementacija generičke DSP komponente u sklopu Typhoon HIL softvera za modelovanje šema energetskih sklopova, Info M - Časopis za informacione tehnologije i multimedijalne sisteme, 2015, pp. 43-49, Fakultet organizacionih nauka
+* Goran Sladić, Igor Cverdelj-Fogaraši, Stevan Gostojić, Goran Savić, Milan Segedinac, Miroslav Zarić: Multilayer Document Model for Semantic Document Management Services, Journal of Documentation, 2017, pp. 803-824, Emerald
 
-* Mirjana Dejanović, Igor Dejanović: Software for Reaction-Time Measurement and its Application for the Evaluation of Patient's Recovery after the Stroke, ICIT 2015 The 7th International Conference on Information Technology, 2015, pp. 182-185, Al-Zaytoonah University of Jordan
+* Igor Cverdelj-Fogaraši, Goran Sladić, Stevan Gostojić, Milan Segedinac, Branko Milosavljević: Semantic Integration of Enterprise Information Systems Using Meta-Metadata Ontology, Information Systems and e-Business Management, 2017, pp. 257-304, Springer
 
-* Milorad Filipović, Sebastijan Kaplar, Renata Vaderna, Željko Ivković, Gordana Milosavljević, Igor Dejanović: Aspect-oriented engines for Kroki models execution, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 502-507, Information Society of Serbia
+* Alen Suljkanović, Stevan Gostojić, Igor Dejanović, Sebastijan Kaplar: Analysis of Current Languages for Developing Distributed Systems, Proceedings of The 7th International Conference on Information Society, Technology and Management, 2017, pp. 382-385, Informaciono društvo Srbije
 
-* Renata Vaderna, Igor Dejanović, Gordana Milosavljević: Graph layout algorithms and libraries: overview and improvements, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 55-60, Information Society of Serbia
+* Stevan Gostojić: Stvaranje i primena pravnih akata tehnikama semantičkog veba, Stvaranje i primena pravnih akata tehnikama semantičkog veba, 2017, pp. 244, Fakultet tehničkih nauka
 
-* Renata Vaderna, Željko Vuković, Dušan Okanović, Igor Dejanović: A Domain-Specific Language for Service Level Agreement Specification, ICIT 2015 The 7th International Conference on Information Technology, 2015, pp. 693-697, Al-Zaytoonah University of Jordan
+* Igor Cverdelj-Fogaraši, Goran Sladić, Stevan Gostojić, Branko Milosavljević: Digitalna arhiva sudskih predmeta, Digitalna arhiva sudskih predmeta, 2017, pp. 16, Fakultet tehničkih nauka
 
-* Geraint Duck, Aleksandar Kovačević, David L. Robertson, Robert Stevens, Goran Nenadić: Ambiguity and variability of database and software names in bioinformatics, Journal of Biomedical Semantics, 2015, pp. 29, Springer
+* Bojana Dimić Surla, Dušan Surla, Dragan Ivanović: Evaluation of citations: a proposition to supplement the corresponding rule book in Serbia, The Electronic Library, 2017, pp. 598--614, Emerald
 
-* Azad Dehghan, Aleksandar Kovačević, George Karystianis, John A. Keane, Goran Nenadić: Combining knowledge- and data-driven methods for de-identification of clinical narratives, Journal of Biomedical Informatics, 2015, pp. 1-1, Elsevier
+* Gordana Rudić, Dragan Ivanović: Cataloguing dataset in Library Information Systems using the MARC 21 format, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 395--399, Society of information systems and computer networks
 
-* George Karystianis, Azad Dehghan, Aleksandar Kovačević, John A. Keane, Goran Nenadić: Using local lexicalized rules to identify heart disease risk factors in clinical notes, Journal of Biomedical Informatics, 2015, pp. 1-1, Elsevier
+* Dragan Ivanović, Joel Azzopardi: Integration of an Automatic Recommendation Component into a Digital Library of PhD Dissertations from the University of Novi Sad, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 400--404, Society of information systems and computer networks
 
-* Darko Petrušić, Konjović Zora, Milan Segedinac: Semantic modelling and ontology integration of the open government systems, Tehnički vjesnik/Technical Gazette, 2015, pp. 1-1, Faculty of Electrical Engineering in Osijek
+* Valentin Penca, Siniša Nikolić, Dragan Ivanović: Mapping scheme from Invenio to CERIF format, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 409--414, Society of information systems and computer networks
 
-* Sebastijan Kaplar, Milorad Filipović, Gordana Milosavljević, Goran Sladić: Kroki Administration Subsystem Based on RBAC Standard and Aspects, 5th International Conference on Information Society Technology and Management (ICIST), 2015, pp. 61-66, Information Society of Serbia
+* Nikola Nikolić, Goran Savić, Branko Milosavljević: E-Course generator based on ontology of accreditation documents, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 361-365, 
 
-* Miroslav Zarić, Zoran Miškov, Goran Sladić: A Flexible, Process-Aware Contract Management System, 5th International Conference on Information Society Technology and Management (ICIST), 2015, pp. 313-318, Information Society of Serbia
+* Aleksandar Pejaković, Milan Segedinac, Goran Savić: Generating educational courses by using ontologies and stream processing, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 366-367, 
 
-* Robert Molnar, Stevan Gostojić, Goran Sladić, Goran Savić, Zora Konjović: Enabling Customization of Document-Centric Systems Using Document Management Ontology, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 267-271, Society for Information Systems and Computer Networks
-
-* Nikola Nikolić, Goran Savić, Milan Segedinac, Stevan Gostojić, Zora Konjović: RDF Stores Performance Test on Servers with Average Specification, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 67-72, Informaciono društvo Srbije
+* Dragan Vidaković, Milan Segedinac, Đorđe Obradović, Goran Savić: Recommendation System with Personalizable Distributed Collaborative Filtering, 7th International Conference on Information Society and Technology (ICIST 2017), 2017, pp. 29-32, 
 
