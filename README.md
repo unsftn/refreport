@@ -73,4 +73,4 @@ Trenutnu verziju iz repozitorijuma uvek možete videti na [ovom linku](http://ht
 
 Reference koje nisu potpune su obeležene crvenom bojom.
 
-Na kraju, u izveštaju, proverite po vašim imenom da li je sve ispravno.
+Na kraju, u izveštaju, proverite pod vašim imenom da li je sve ispravno.
