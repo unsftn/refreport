@@ -28,7 +28,7 @@ Pokrenuti alat sa:
 $ python refreport.py <filter po godinama>
 ```
 
-Gde je filter oblika: `2016` ili npr. `2015-2017`.
+Gde je filter oblika: `2016` ili npr. `2015-2018`.
 
 Biće generisan fajl `refreport.html`.
 
@@ -38,7 +38,7 @@ Informacije o nedostajućim poljima u bibtex fajlovima biće prikazane na
 konzoli.
 
 Možete ubaciti u repo i `refreport.html` ali proverite da ste ga dobro
-generisali, tj. da je filtriran za tekući ciklus (trenutno za 2017 god.).
+generisali, tj. da je filtriran za tekući ciklus (trenutno za 2018 god.).
 
 Za autore navodite prvo ime pa prezime. Autore razdvajajte sa rečju "and".
 
