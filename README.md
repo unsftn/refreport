@@ -69,7 +69,7 @@ Primer:
 
 Ne morate brisati reference od ranije. Samo dodajte nove u već postojeće fajlove.
 
-Trenutnu verziju iz repozitorijuma uvek možete videti na [ovom linku](http://htmlpreview.github.io/?https://github.com/unsftn/refreport/blob/master/refreport.html).
+Trenutnu verziju iz repozitorijuma uvek možete videti na linku https://raw.githack.com/unsftn/refreport/master/refreport.html
 
 Reference koje nisu potpune su obeležene crvenom bojom.
 
