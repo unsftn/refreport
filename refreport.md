@@ -11,6 +11,8 @@ permalink: /publications/
 
 * Miloš Simić, Milan Stojkov, Goran Sladić, Branko Milosavljević: Edge computing system for large-scale distributed sensing systems, 8th International Conference on Information Society and Technology ICIST 2018, 2018, pp. 36-39, Society for Information Systems and Computer Networks
 
+* Milan Stojkov, Miloš Simić, Goran Sladić, Branko Milosavljević: Two-step process for secure registration of nodes in IoT systems, 8th International Conference on Information Society and Technology ICIST 2018, 2018, pp. 28-31, Society for Information Systems and Computer Networks
+
 * Renata Vaderna, Željko Vuković, Igor Dejanović, Gordana Milosavljević: Graph Drawing and Analysis Library and Its Domain-Specific Language for Graphs’ Layout Specifications, Scientific Programming, 2018, pp. 26 pages, Hindawi
 
 * Lazar Nikolić, Marko Letić, Bojana Zoranović, Igor Dejanović: Adaptation of HTTP request-response messaging to arbitrary messaging pattern in RESTful service oriented architectures, 8th International Conference on Information Society and Technology ICIST 2017, 2018, pp. 290--295, Society for Information Systems and Computer Networks
