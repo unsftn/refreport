@@ -25,9 +25,7 @@ permalink: /publications/
 
 * Marko Marković, Stevan Gostojić: Open Judicial Data: A Comparative Analysis, Social Science Computer Review, 2018, pp. , SAGE Journals
 
-* Gordana Milosavljević Goran Sladić Branko Milosavljević Miroslav Zarić Stevan Gostojić, Jelena Slivka: Context-sensitive Constraints for Access Control of Business Processes, Computer Science and Information Systems, 2018, pp. 1-30, ComSIS Consortium
-
-* Dragan Vidaković Stevan Gostojić, Aleksandar Kovačević: Serbian Legislation as a Network, Proceedings of The 8th International Conference on Information Society, Technology and Management, 2018, pp. 105-108, Society for information systems and computer networks
+* Dragan Vidaković, Stevan Gostojić, Aleksandar Kovačević: Serbian Legislation as a Network, Proceedings of The 8th International Conference on Information Society, Technology and Management, 2018, pp. 105-108, Society for information systems and computer networks
 
 * Igor Zečević, Petar Bjeljac, Branko Perišić, Stevan Stankovski, Danijel Venus, Gordana Ostojić: Model driven development of hybrid databases using lightweight metamodel extensions, Enterprise Information Systems, 2018, pp. 1221--1238, Taylor & Francis
 
