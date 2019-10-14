@@ -211,5 +211,6 @@ if __name__ == "__main__":
         except NoMatch as e:
             print(str(e))
 
+    refs.sort(key=lambda x: x.get('year', '0000'), reverse=True)
     gen_html(refs)
     gen_md(refs)
